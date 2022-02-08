@@ -1,0 +1,191 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+
+nav{
+    display:flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:10px 30px;
+}
+nav ul li  a{
+    color:#30638e;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+    background: #30638e;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 50%;
+}
+
+.about{
+    color: #000;
+    line-height: 5vh;
+    font-size: 20px; 
+    text-align: center;
+    position: relative;
+}
+.about h2{
+    color: #bcd4e6;
+}
+.about p{
+    color: #000;
+    line-height: 5vh;
+    font-size: 20px; 
+    text-align: center;
+}
+.funfacts h2{
+    color: #bcd4e6;
+
+}
+
+.funfacts ul{
+    text-align: left;
+    display: block;
+    list-style-type: disc;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    cursor: pointer;
+    width: 80px;
+}
+
+/* experience  */
+.experience h1{
+text-align: center;
+font-size: 200;
+}
+
+
+.experience {
+    text-align: left;
+    display: block;
+    list-style-type: disc;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.experience a, .bullets a, .intro a {
+    text-decoration: none;
+    color: #30638e;
+}
+
+.experience ul li {
+    font-size: 20px;
+    line-height: 50px;
+}
+
+/* contact */
+.contact h1, .intro h1 {
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    font-size: 200;
+    text-align: center;
+    color:#000;
+    line-height: 10vh;
+}
+
+.middle {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    margin: 25px;
+    width: 350px;
+    height: 200px;
+    color: #bcd4e6;
+  }
+
+  .middle a{
+    color: #000;
+    text-align: center;
+    line-height: 15vh;
+    text-decoration: none;
+  }
+
+  .contact p{
+    color: #bcd4e6;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 20px; 
+
+  }
+
+/* o&S */
+.intro img{
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.intro h1{
+    color: #bcd4e6;
+}
+
+.intro p{
+    text-align: center;
+}
+
+.bullets ul {
+    text-align: left;
+    display: block;
+    list-style-type: disc;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.bullets ul li {
+    position: relative;
+    font-size: 15px;
+}
+
+.bullets ul li h3{
+    color: #000;
+    font-size: 20px;
+}
+
+
+
+
+
+
